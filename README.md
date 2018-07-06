@@ -10,14 +10,14 @@
 [![i-like-badges](https://img.shields.io/badge/world's_coolest_color-green-_.svg?colorB=00FF00)](https://github.com/marceltransier)
 [![license](https://img.shields.io/github/license/marceltransier/ttt_discord_bot.svg)](LICENSE)
 
-This is a powerful [discord bot](https://discord.js.org) that mutes dead players in [TTT](http://ttt.badking.net) (Garry's Mod - Trouble in Terrorist Town)
+This is a powerful [Discord bot](https://discord.js.org) that mutes dead players in [TTT](http://ttt.badking.net) (Garry's Mod - Trouble in Terrorist Town)
 
 ## Getting Started
-If you need a step-by-step tutorial, follow my [guide at steam](http://steamcommunity.com/sharedfiles/filedetails/?id=1351369388)
+If you need a step-by-step tutorial, follow my [guide at Steam](http://steamcommunity.com/sharedfiles/filedetails/?id=1351369388)
 
 ### Prerequisites
-- You have to have allready installed a Garry's Mod Server with the TTT Gamemode
-- You must have [Nodejs](https://nodejs.org) installed
+- You need a fully set-up Garry's Mod Server with the TTT gamemode
+- You must have [Node.js](https://nodejs.org) installed
 
 ### Installation
 1. Clone this repository (to e.g. your home folder) and install the requirements
@@ -27,7 +27,7 @@ If you need a step-by-step tutorial, follow my [guide at steam](http://steamcomm
      cd ttt_discord_bot
      npm install --prefix ./discord_bot/
      ```
-2. Rename the `config.json.example` in `config.json`
+2. Rename the `config.json.example` to `config.json`
 
 3. Create Discord Bot, invite him to your server and paste the token in the config
 
@@ -35,29 +35,29 @@ If you need a step-by-step tutorial, follow my [guide at steam](http://steamcomm
 
    - insert the bot token at `discord -> token` in the config.json
    
-   - grant the bot the permissions to mute members
+   - grant the bot the permission to mute members
 
-4. Insert the Guild *(Server)* id and the channel id in the config
+4. Insert the Guild *(Server)* ID and the channel ID in the config
 
-   - if you don't know how to get these id's, follow [this guide](https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
+   - if you don't know how to get these ID's, follow [this guide](https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
 
-   - insert the guild id at `discord -> guild` and the cannel id of the voice channel in wich the bot should mute dead players at `discord -> channel` in the config.json
+   - insert the guild ID at `discord -> guild` and the channel ID of the voice channel in which the bot should mute dead players at `discord -> channel` in the config.json
 
-5. Add the addon to the garrysmod server
+5. Add the addon to the Garry's Mod server
 
-   - Move the `gmod_addon` folder to garrysmod/addons and name it suitable e.g. `ttt_discord_bot`
+   - Move the `gmod_addon` folder to `garrysmod/addons` and name it suitable e.g. `ttt_discord_bot`
 
-   - Or add the [workshop object]() to  the servers collection
+   - ~~Or add the [Workshop object](https://steamcommunity.com/sharedfiles/filedetails/?id=1350367721) to  the servers collection~~
 
 ### Usage
 
-- Start the bot by runing the node command with the `ttt_discord_bot/discord_bot/` directory
-- Connect your Steam Account with the bot by typing `!discord YourDiscordTag` in the ingame chat. E.g `!discord marcel.js#4402`. If you're lazy and there is nobody else with your discord discriminator (`#4402`) in the ttt channel, it's enough if you use this. E.g. `!discord 4402`
+- Start the bot by running the `node` command with the `ttt_discord_bot/discord_bot/` directory
+- Connect your Steam Account with the bot by typing `!discord YourDiscordTag` in the in-game chat, e.g. `!discord marcel.js#4402`. If you're lazy and there is nobody else with your discord discriminator (`#4402`) in the TTT channel, it's enough if you use this, e.g. `!discord 4402`
 - If you're in the **configured voice channel**, the game state is **in progress**, you're **connected with discord** and you die in TTT, the bot will mute you!
 
 ## Credits
 
-- I used [discord.js](https://discord.js.org) in this project. Thanks for the easy opportunity writing a discord bot in javascript!
+- I used [discord.js](https://discord.js.org) in this project. Thanks for the easy opportunity writing a Discord bot in javascript!
 - Thanks for the great Garry's Mod gamemode [Trouble in Terrorist Town](http://ttt.badking.net) I made this bot for.
 
 ## Contributing
